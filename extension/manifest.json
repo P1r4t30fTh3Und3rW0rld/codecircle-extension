@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "CodeCircle - LeetCode Group Tracker",
+    "description": "Link your LeetCode account and join learning communities.",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://leetcode.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://leetcode.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}

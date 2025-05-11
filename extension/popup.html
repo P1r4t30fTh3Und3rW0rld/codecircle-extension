@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CodeCircle</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h2>CodeCircle Groups</h2>
+
+    <input type="text" id="leetcode-username" placeholder="LeetCode Username">
+    <button id="link-account">Link Account</button>
+
+    <div id="stats-container" style="display: none;">
+        <p><strong>Username:</strong> <span id="username"></span></p>
+        <p><strong>Problems Solved:</strong> <span id="problems-solved"></span></p>
+    </div>
+
+    <h3>Linked Accounts</h3>
+    <div id="linked-accounts" style="margin-top: 20px;"></div>
+    <hr>
+
+    <input type="text" id="groupName" placeholder="Group Name">
+    <button id="createBtn">Create Group</button>
+
+    <input type="text" id="groupCode" placeholder="Enter Group Code">
+    <button id="joinBtn">Join Group</button>
+
+    <div class="msg" id="msg"></div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
